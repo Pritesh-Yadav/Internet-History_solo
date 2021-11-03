@@ -1,9 +1,152 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My Blog</title>
-    <link href="" rel="stylesheet">
+    <title>Pritesh Blog</title>
+    <link a href="" rel="stylesheet">
 </head>
+<style>
+    h1 {
+        font-size: 18pt;
+        text-align: center;
+        color: #520f0f;
+        padding: 18px 0 18px 0;
+        margin: 0 0 10px 0;
+    }
+
+    p {
+        padding: 0;
+        margin: 0;
+    }
+
+    .section {
+        background-color: #7ff55e;
+        padding: 15px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+    }
+    #header {
+        background-image: url("https://history-internet.png");
+        background-size: cover;
+    }
+    #header img {
+        display: block;
+        width: 100px;
+        height: 100px;
+        margin: auto;
+    }
+    #header p {
+        font-size: 25pt;
+        color: #3b464c;
+        padding-top: 5px;
+        margin: 0;
+        font-weight: bold;
+        text-align: center;
+    }
+    .quote {
+        font-size: 12pt;
+        text-align: right;
+        margin-top: 10px;
+    }
+    table {
+        width: 100%;
+        font-size: 11pt;
+    }
+    table, th, td {
+        border: 2px solid #cecece;
+        border-collapse: collapse;
+        text-align: center;
+        table-layout: fixed;
+    }
+    .selected {
+        background-color: #f36f48;
+        font-weight: bold;
+        color: burlywood;
+    }
+    li {
+        margin-bottom: 15px;
+        font-weight: bold;
+    }
+    progress {
+        width: 70%;
+        height: 20px;
+        color: #40d715;
+        background: #7ff55e;
+    }
+    progress::-webkit-progress-bar {
+        background: #170101;
+    }
+    progress::-webkit-progress-value {
+        background: #3fb6b2;
+    }
+    progress::-moz-progress-bar {
+        color: #3fb6b2;
+        background: #efefef;
+    }
+    iframe, audio {
+        display: block;
+        margin: 0 auto;
+        border: 3px solid #3fb6b2;
+    }
+    hr {
+        border: 0;
+        height: 1px;
+        background: #f36f48;
+    }
+    form {
+        text-align: center;
+        margin-top: 0;
+    }
+    .submit {
+        background-color: #3fb6b2;
+        padding: 12px 45px;
+        border-radius: 5px;
+        cursor: pointer;
+        color: #ffffff;
+        border: none;
+        outline: none;
+        margin: 0;
+        font-weight: bold;
+    }
+    .submit:hover {
+        background-color: #43a09d;
+    }
+    textarea {
+        height: 100px;
+    }
+    input, textarea {
+        margin-bottom: 10px;
+        font-size: 11pt;
+        padding: 15px 10px 10px;
+        border: 1px solid #cecece;
+        background-color: #efefef;
+        color: #787575;
+        border-radius: 5px;
+        width: 70%;
+        outline: none;
+    }
+    
+    #contacts img {
+        height: 50px;
+        width: 50px;
+        margin-left: 7px;
+        margin-right: 7px;
+    }
+    #contacts a {
+        text-decoration: none;
+    }
+    #contacts img:hover {
+        opacity: 0.8;
+    }
+    #contacts {
+        text-align: center;
+    }
+    .copyright {
+        font-size: 8pt;
+        text-align: right;
+        padding-bottom: 10px;
+        color: grey;
+    }
+</style>
 
 <body>
 <!-- header start -->
@@ -14,7 +157,8 @@
 
 <!-- My Schedule section start -->
 <div class="section">
-    <h1><span>INTERNET</span></h1>
+    <h1><span>INTERNET FROM 1991</span></h1>
+
     <p>
     </p>
 </div>
@@ -23,54 +167,20 @@
 
 <!-- My Skills section start -->
 <div class="section">
-    <h1><span>ETHERNET</span></h1>
-     </p>
+    <h1><span>WEB2.0</span></h1>
+    <p>  </p>
 </div>
-
 <!-- My Skills section end -->
 
 <div class="section">
-    <h1><span>2nd Decade</span></h1>
+    <h1><span>MobilePhones and Internet</span></h1>
     <p>
     </p>
 </div>
 
-<!-- Media section start -->
-<div class="section">
-    <h1><span>Short video on History of Internet</span></h1>
-    <iframe height="250" width="600" src="" allowfullscreen frameborder="0"></iframe>
-</div>
-<!-- Media section end -->
+<button onclick=document.location="l_layout.html" class="b1">More</button>
+<!--<a href="l-layout.html">navigate</a> -->
 
-<!-- Form section start -->
-<div class="section">
-    <h1><span>Contact Me</span></h1>
-
-    <svg class="face" height="100" width="100">
-        <circle cx="50" cy="50" r="50" fill="#FDD835"/>
-        <circle cx="30" cy="30" r="10" fill="#FFFFFF"/>
-        <circle cx="70" cy="30" r="10" fill="#FFFFFF"/>
-        <circle cx="30" cy="30" r="5" fill="#000000"/>
-        <circle cx="70" cy="30" r="5" fill="#000000"/>
-        <path d="M 30 70 q 20 20 40 0" stroke="#FFFFFF" stroke-width="5" fill="none" />
-    </svg>
-
-    <form>
-        <input name="name" placeholder="Name" type="text" required /><br/>
-        <input name="email" placeholder="Email" type="email" required /><br/>
-        <textarea name="message" placeholder="Message" required ></textarea>
-        <input type="submit" value="SEND" class="submit" />
-    </form>
-</div>
-<!-- Form section end -->
-
-<!-- Contacts section start -->
-<div class="section" id="contacts">
-    <h1><span>Reach Me</span></h1>
-    <div>
-
-    </div>
-</div>
 <!-- Contacts section end -->
 
 </body>
