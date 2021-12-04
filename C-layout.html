@@ -1,10 +1,281 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Pritesh Blog</title>
+
 </head>
+<style>
+    h1 {
+        font-size: 18pt;
+        text-align: center;
+        color: #520f0f;
+        padding: 18px 0 18px 0;
+        margin: 0 0 10px 0;
+    }
+
+    p {
+        padding: 0;
+        margin: 0;
+    }
+
+    .section {
+        background-color: #f5e15e;
+        padding: 15px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+    }
+    #header {
+        background-image: url("https://history-internet.png");
+        background-size: cover;
+    }
+    #header img {
+        display: block;
+        width: 100px;
+        height: 100px;
+        margin: auto;
+    }
+    #header p {
+        font-size: 25pt;
+        color: #3b464c;
+        padding-top: 5px;
+        margin: 0;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    table {
+        width: 100%;
+        font-size: 11pt;
+    }
+    table, th, td {
+        border: 2px solid #cecece;
+        border-collapse: collapse;
+        text-align: center;
+        table-layout: fixed;
+    }
+
+    li {
+        margin-bottom: 15px;
+        font-weight: bold;
+    }
+    progress {
+        width: 70%;
+        height: 20px;
+        color: #d7cd15;
+        background: #f5ed5e;
+    }
+    progress::-webkit-progress-bar {
+        background: #170101;
+    }
+    progress::-webkit-progress-value {
+        background: #3fb6b2;
+    }
+    progress::-moz-progress-bar {
+        color: #3fb6b2;
+        background: #efefef;
+    }
+    iframe, audio {
+        display: block;
+        margin: 0 auto;
+        border: 3px solid #3fb6b2;
+    }
+    hr {
+        border: 0;
+        height: 1px;
+        background: #f36f48;
+    }
+    form {
+        text-align: center;
+        margin-top: 0;
+    }
+
+
+    textarea {
+        height: 100px;
+    }
+    input, textarea {
+        margin-bottom: 10px;
+        font-size: 11pt;
+        padding: 15px 10px 10px;
+        border: 1px solid #cecece;
+        background-color: #efefef;
+        color: #787575;
+        border-radius: 5px;
+        width: 70%;
+        outline: none;
+    }
+
+    #contacts img {
+        height: 50px;
+        width: 50px;
+        margin-left: 7px;
+        margin-right: 7px;
+    }
+    #contacts a {
+        text-decoration: none;
+    }
+    #contacts img:hover {
+        opacity: 0.8;
+    }
+
+    .navigation-bar{
+        background: #f5e15e;
+        text-align: center;
+    }
+    .navigation-bar ul{
+        display: inline-flex;
+        list-style: none;
+        color: white;
+    }
+    .navigation-bar ul li{
+        width: 120px;
+        margin: 15px;
+        padding: 15px;
+    }
+    .navigation-bar ul li a{
+        text-decoration: none;
+        color: red;
+    }
+    .navigation-bar ul li:hover{
+        background: #2bab0d;
+        border-radius: 3px;
+    }
+</style>
+
 <body>
+<div class="navigation-bar">
+    <ul>
+        <li > <a href="home.html">HOME</a></li>
+
+        <li > <a href="D-layout.html">SEPARATION OF CONCERNS</a></li>
+        <li > <a href="A-layout.html">PYTHON PROGRAMMING - overview</a></li>
+        <li > <a href="B-layout.html">AAA TESTING</a></li>
+    </ul>
+</div>
+<!-- header start -->
+<div id="header" class="section">
+    <p> OOPS </p>
+</div>
+<!-- header end -->
+
+<!-- My Schedule section start -->
+<div class="section">
+    <h1><span>Object Oriented Programming Structure</span></h1>
+
+    <p>
+        Object-Oriented Programming(OOP), is all about creating OBJECTS. An object is a group of interrelated
+        variables and functions. These variables are often referred to as properties of the object and functions are
+        referred to as the behavior of the objects. These objects provide a better and clear structure for the program.
+
+    </p>
+
+</div>
+
+
+<div class="section">
+    <h1><span>Inheritance </span></h1>
+    <p>
+        Inheritance is the capability of one class to derive or inherit the properties from another class. The class
+        that derives properties is called the derived class or base class and the class from which the properties are
+        being derived is called the base class or parent class. The benefits of inheritance are: <br>
+        <br>
+        -It represents real-world relationships well. <br>
+
+        -It provides the reusability of a code. We don’t have to write the same code again and again. Also, it allows us
+        to add more features to a class without modifying it. <br>
+
+        -It is transitive in nature, which means that if class B inherits from another class A, then all the subclasses
+        of B would automatically inherit from class A.  <br>
+        <br>
+
+        Example of Inheritance: <br>
+        In this calculator program, we have created two classes i.e. Person (parent class) and Employee (Child Class). The
+        Employee class inherits from the Person class. We can use the methods of the person class through employee
+        class as seen in the display function in the above code. A child class can also modify the behavior of the
+        parent class as seen through the details() method.
+        <br>
+        <br>
+
+        EXAMPLE:
+
+
+    </p>
+</div>
+
+
+
+<div class="section">
+    <h1><span>Polymorphism</span></h1>
+    <p>
+        Polymorphism simply means having many forms. For example, we need to determine if the given species of birds
+        fly or not, using polymorphism we can do this using a single function. We can also make any number of changes
+        during the object's lifetime. <br>
+
+
+        <br>
+        EXAMPLE: <br>
+
+
+        <br>
+
+        Example of Polymorphism: <br>
+        In this Calculator program,
+
+
+    </p>
+</div>
+
+<div class="section">
+    <h1><span>Encapsulation</span></h1>
+    <p>
+        Encapsulation is one of the fundamental concepts in object-oriented programming (OOP). It describes the idea of
+        wrapping data and the methods that work on data within one unit. This puts restrictions on accessing variables
+        and methods directly and can prevent the accidental modification of data. To prevent accidental change, an
+        object variable can only be changed by an object method. Those types of variables are known as private
+        variables.<br>
+        A class is an example of encapsulation as it encapsulates all the data that is member functions, variables, etc
+        <br> <br>
+
+        Example of Encapsulation:
+        <br>
+        In the above example, we have created the c variable as the private attribute. We cannot even access this
+        attribute directly and cannot even change its value. <br>
+        <br>
+
+        EXAMPLE:
+
+
+
+
+    </p>
+</div>
+
+<div class="section">
+    <h1><span> Abstraction</span></h1>
+    <p>
+        Abstraction in OOP is a process of hiding the real implementation of the method by only showing a method
+        signature. In Python, we can achieve abstraction using ABC (abstraction class) or abstract method.
+        <br>
+        ABC is a class from the abc module in Python. If we extend any class with ABC and include any abstraction
+        methods, then the classes inherited from this class will have to mandatorily implement those abstract methods.
+
+        <br>
+        When we annotate any method with an abstract method keyword, then it is an abstract method in Python
+        (it won’t have any method implementation). If the parent class has abstract method and not inherited from an
+        abstract class, then it is optional to implement the abstract method.
+        <br> <br>
+
+        Example of Abstraction: <br>
+        In this calculator program, Here, Vehicle is a parent inherited from ABC class. It has an abstraction method
+        drive.Car is another class that is inherited from Vehicle, so it had to implement the drive method. <br> <br>
+
+        EXAMPLE:
+
+
+    </p>
+</div>
+
+
 
 </body>
 </html>

@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Pritesh Blog</title>
-    <link a href="" rel="stylesheet">
+
 </head>
 <style>
     h1 {
@@ -42,11 +42,6 @@
         font-weight: bold;
         text-align: center;
     }
-    .quote {
-        font-size: 12pt;
-        text-align: right;
-        margin-top: 10px;
-    }
     table {
         width: 100%;
         font-size: 11pt;
@@ -57,11 +52,7 @@
         text-align: center;
         table-layout: fixed;
     }
-    .selected {
-        background-color: #f36f48;
-        font-weight: bold;
-        color: burlywood;
-    }
+
     li {
         margin-bottom: 15px;
         font-weight: bold;
@@ -96,20 +87,7 @@
         text-align: center;
         margin-top: 0;
     }
-    .submit {
-        background-color: #3fb6b2;
-        padding: 12px 45px;
-        border-radius: 5px;
-        cursor: pointer;
-        color: #ffffff;
-        border: none;
-        outline: none;
-        margin: 0;
-        font-weight: bold;
-    }
-    .submit:hover {
-        background-color: #43a09d;
-    }
+
     textarea {
         height: 100px;
     }
@@ -137,25 +115,115 @@
     #contacts img:hover {
         opacity: 0.8;
     }
-    #contacts {
+
+
+    .navigation-bar{
+        background: #f5e15e;
         text-align: center;
     }
-    .copyright {
-        font-size: 8pt;
-        text-align: right;
-        padding-bottom: 10px;
-        color: grey;
+    .navigation-bar ul{
+        display: inline-flex;
+        list-style: none;
+        color: white;
+    }
+    .navigation-bar ul li{
+        width: 120px;
+        margin: 15px;
+        padding: 15px;
+    }
+    .navigation-bar ul li a{
+        text-decoration: none;
+        color: red;
+    }
+    .navigation-bar ul li:hover{
+        background: #2bab0d;
+        border-radius: 3px;
     }
 </style>
 
 <body>
+<div class="navigation-bar">
+    <ul>
+        <li > <a href="home.html">HOME</a></li>
+        <li > <a href="B-layout.html">AAA TESTING</a></li>
+        <li > <a href="C-layout.html">OOPS</a></li>
+        <li > <a href="D-layout.html">SEPARATION OF CONCERNS</a></li>
+    </ul>
+</div>
+
 <!-- header start -->
 <div id="header" class="section">
-    <p> INTERNET-HISTORY </p>
+    <p>PYTHON PROGRAMMING - overview </p>
 </div>
 <!-- header end -->
 
 <!-- My Schedule section start -->
+
+<div class="section">
+    <h1><span> PYLINT</span></h1>
+
+    <p>
+        Pylint is a tool that checks for errors in Python code and tries to enforce a coding standard and looks for code
+        smells. It can also look for certain type errors and it can recommend suggestions about how particular blocks
+        can be refactored and can offer you details about the code complexity. Flake8 is better these days to check the
+        errors in python. <br>
+        pylint-django is a Pylint plugin for improving code analysis when analysing code using Django. It is also used
+        by the Prospector tool. <br>
+
+
+    </p>
+
+</div>
+
+<div class="section">
+    <h1><span>Steps to Install Run and Integrate PYLINT </span></h1>
+
+    <p>
+        To run and install pylint in windows we have to use certain commands which are: <br><br>
+
+        - pip install pylint (To install pylint) <br><br>
+
+        - pylint fileName.py (For getting full report) <br><br>
+
+        - pylint -rn fileName.py (will get Errors and warnings with this command) <br><br>
+
+        - pylint -E fileName.py (To find Errors) <br><br>
+
+        - pylint-gui (To run GUI) <br><br>
+
+        To integrate PYLINT to PYCHARM: <br><br>
+
+        - File/Settings/Tools/External Tools/  <br><br>
+
+        - Click Add '+' button  <br><br>
+
+        - Fill in the arguments <br><br>
+
+        a) Name: pylint  <br><br>
+
+        b) Program: C:\Python27\Scripts\pylint    <br><br>
+
+        c) Parameters: --rcfile ...\mantid\tools\Pylint\pylint.cfg $FileName$ # Note: Insert full path instead of
+        ..\mantid\tools\Pylint\pylint.cfg    <br><br>
+
+        d) Working Directory: $FileDir$ # Note: $FileName$ and $FileDir$ is a macro inserted  <br><br>
+
+        e) Leave rest of settings as default and click `OK` on Edit tool  <br><br>
+
+        - Click `OK` on settings  <br><br>
+
+        - Click right on the file or code  <br><br>
+
+        - Select external tools/pylint  <br><br>
+
+        - pylint voilations should run inside PyCharm  <br><br>
+
+
+    </p>
+
+</div>
+
+
 <div class="section">
     <h1><span>Factory </span></h1>
 
@@ -228,7 +296,7 @@
     <h1><span>Type Hint</span></h1>
     <p>
         Type hinting is a formal solution to statically indicate the type of a value within your Python code. It was
-        specified in PEP 484 and introduced in Python 3.5. Here's an example of adding type information to a function.
+        specified in PEP 484 and introduced in Python 3.5. It is generally used in other programming languages also.
     </p>
 </div>
 
@@ -271,9 +339,9 @@
 <div class="section">
     <h1><span>Facade</span></h1>
     <p>
-        Facade is a structural design pattern that provides a simplified (but limited) interface to a complex system of
-        classes, library or framework. While Facade decreases the overall complexity of the application, it also helps
-        to move unwanted dependencies to one place.
+        Facade is a structural design pattern that provides a simplified interface to a complex system of classes,
+        library or framework. While Facade decreases the overall complexity of the application, it also helps to move
+        unwanted dependencies to one place.
     </p>
 </div>
 
@@ -289,13 +357,12 @@
 <div class="section">
     <h1><span>Method</span></h1>
     <p>
-        A method is a function that 'belongs to' an object. (In Python, the term method is not unique to
+        A method is a function that 'belongs to' an object. In Python, the term method is not unique to
         class instances, other object types can have methods as well. For example, list objects have methods called
-        append, insert, remove, sort, and so on.
+        append, insert, remove, sort and many more.
     </p>
 </div>
 
-<button onclick=document.location="f-layout.html" class="b1">History-Internet</button>
 
 
 </body>

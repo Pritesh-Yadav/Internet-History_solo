@@ -2,7 +2,6 @@
 <html>
 <head>
     <title>Pritesh Blog</title>
-    <link a href="" rel="stylesheet">
 </head>
 <style>
     h1 {
@@ -42,11 +41,7 @@
         font-weight: bold;
         text-align: center;
     }
-    .quote {
-        font-size: 12pt;
-        text-align: right;
-        margin-top: 10px;
-    }
+
     table {
         width: 100%;
         font-size: 11pt;
@@ -57,11 +52,7 @@
         text-align: center;
         table-layout: fixed;
     }
-    .selected {
-        background-color: #f36f48;
-        font-weight: bold;
-        color: burlywood;
-    }
+
     li {
         margin-bottom: 15px;
         font-weight: bold;
@@ -96,20 +87,7 @@
         text-align: center;
         margin-top: 0;
     }
-    .submit {
-        background-color: #3fb6b2;
-        padding: 12px 45px;
-        border-radius: 5px;
-        cursor: pointer;
-        color: #ffffff;
-        border: none;
-        outline: none;
-        margin: 0;
-        font-weight: bold;
-    }
-    .submit:hover {
-        background-color: #43a09d;
-    }
+
     textarea {
         height: 100px;
     }
@@ -137,21 +115,44 @@
     #contacts img:hover {
         opacity: 0.8;
     }
-    #contacts {
+
+    .navigation-bar{
+        background: #f5e15e;
         text-align: center;
     }
-    .copyright {
-        font-size: 8pt;
-        text-align: right;
-        padding-bottom: 10px;
-        color: grey;
+    .navigation-bar ul{
+        display: inline-flex;
+        list-style: none;
+        color: white;
+    }
+    .navigation-bar ul li{
+        width: 120px;
+        margin: 15px;
+        padding: 15px;
+    }
+    .navigation-bar ul li a{
+        text-decoration: none;
+        color: red;
+    }
+    .navigation-bar ul li:hover{
+        background: #2bab0d;
+        border-radius: 3px;
     }
 </style>
 
 <body>
+<div class="navigation-bar">
+    <ul>
+        <li > <a href="home.html">HOME</a></li>
+
+        <li > <a href="C-layout.html">OOPS CONCEPTS</a></li>
+        <li > <a href="D-layout.html">SEPARATION OF CONCERNS</a></li>
+        <li > <a href="A-layout.html">PYTHON PROGRAMMING - overview</a></li>
+    </ul>
+</div>
 <!-- header start -->
 <div id="header" class="section">
-    <p> INTERNET-HISTORY </p>
+    <p>AAA TESTING</p>
 </div>
 <!-- header end -->
 
@@ -175,31 +176,29 @@
     <h1><span>Arrange Act Assert</span></h1>
     <p>
         The Arrange-Act-Assert(also AAA and 3A) pattern of testing was observed and named by Bill Wake in 2001.
-        I first came across it in Kent Becks book Test Driven Development By Example and I spoke about it at PyConUK
-        2016.
+        I first came across it in Kent Becks book Test Driven Development By Example.
         The pattern focuses each test on a single action. The advantage of this focus is that it clearly separates the
         arrangement of the System Under Test (SUT) and the assertions that are made on it after the action.
-        On multiple projects I ve worked on I’ve experienced organised and clean code in the main codebase but
-        disorganisation and inconsistency in the test suite. However when AAA is applied, I’ve found it helps by
-        unifying and clarifying the structure of tests which helps make the test suite much more understandable and
-        manageable.
+        On multiple projects I have experienced organised and clean code in the main codebase but disorganisation and
+        inconsistency in the test suite. However when AAA is applied, I have found it helps by unifying and clarifying
+        the structure of tests which helps make the test suite much more understandable and manageable.
 
     </p>
 </div>
-
 
 
 <div class="section">
     <h1><span>Arrange</span></h1>
     <p>
-        Arrange step sets up the test's input value. The block of code that sets the condition for the test action.
+        Arrange step sets up the tests input value. The block of code that sets the condition for the test action.
     </p>
 </div>
 
 <div class="section">
-    <h1><span>Example</span></h1>
+    <h1><span>EXAMPLE</span></h1>
     <p>
-        Arrangement block is only one line for building a list.
+        Example of Arrange:
+
 
 
 
@@ -227,8 +226,9 @@
 </div>
 
 <div class="section">
-    <h1><span>Example</span></h1>
+    <h1><span>EXAMPLE</span></h1>
     <p>
+        Example of Act:
 
 
     </p>
@@ -258,8 +258,9 @@
 </div>
 
 <div class="section">
-    <h1><span>Example </span></h1>
+    <h1><span>EXAMPLE </span></h1>
     <p>
+        Example of Assert:
 
     </p>
 </div>
@@ -267,15 +268,12 @@
 <div class="section">
     <h1><span>Rules</span></h1>
     <p>
-        Use a single block of code with no empty lines. First test that results, then test side effects.
-        Limit the actions that you make in this block. No actions should happen which is not always possible.
-        Use simple blocks of assertions. If you find that you are repeatedly writing the same code to extract
-        information from the SUT and perform assertions on it, then consider extracting an assertion helper.
+        Use a single block of code with no empty lines. First test that results, then test side effects. Limit the
+        actions that you make in this block. No actions should happen which is not always possible. Use simple blocks
+        of assertions. If you find that you are repeatedly writing the same code to extract information from the SUT
+        and perform assertions on it, then consider extracting an assertion helper.
     </p>
 </div>
-
-
-<button onclick=document.location="f-layout.html" class="b1">History-Internet</button>
 
 
 </body>

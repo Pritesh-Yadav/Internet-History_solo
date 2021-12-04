@@ -1,10 +1,237 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Pritesh Blog</title>
+
 </head>
+<style>
+    h1 {
+        font-size: 18pt;
+        text-align: center;
+        color: #520f0f;
+        padding: 18px 0 18px 0;
+        margin: 0 0 10px 0;
+    }
+
+    p {
+        padding: 0;
+        margin: 0;
+    }
+
+    .section {
+        background-color: #f5e15e;
+        padding: 15px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+    }
+    #header {
+        background-image: url("https://history-internet.png");
+        background-size: cover;
+    }
+    #header img {
+        display: block;
+        width: 100px;
+        height: 100px;
+        margin: auto;
+    }
+    #header p {
+        font-size: 25pt;
+        color: #3b464c;
+        padding-top: 5px;
+        margin: 0;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    table {
+        width: 100%;
+        font-size: 11pt;
+    }
+    table, th, td {
+        border: 2px solid #cecece;
+        border-collapse: collapse;
+        text-align: center;
+        table-layout: fixed;
+    }
+
+    li {
+        margin-bottom: 15px;
+        font-weight: bold;
+    }
+    progress {
+        width: 70%;
+        height: 20px;
+        color: #d7cd15;
+        background: #f5ed5e;
+    }
+    progress::-webkit-progress-bar {
+        background: #170101;
+    }
+    progress::-webkit-progress-value {
+        background: #3fb6b2;
+    }
+    progress::-moz-progress-bar {
+        color: #3fb6b2;
+        background: #efefef;
+    }
+    iframe, audio {
+        display: block;
+        margin: 0 auto;
+        border: 3px solid #3fb6b2;
+    }
+    hr {
+        border: 0;
+        height: 1px;
+        background: #f36f48;
+    }
+    form {
+        text-align: center;
+        margin-top: 0;
+    }
+
+
+    textarea {
+        height: 100px;
+    }
+    input, textarea {
+        margin-bottom: 10px;
+        font-size: 11pt;
+        padding: 15px 10px 10px;
+        border: 1px solid #cecece;
+        background-color: #efefef;
+        color: #787575;
+        border-radius: 5px;
+        width: 70%;
+        outline: none;
+    }
+
+    #contacts img {
+        height: 50px;
+        width: 50px;
+        margin-left: 7px;
+        margin-right: 7px;
+    }
+    #contacts a {
+        text-decoration: none;
+    }
+    #contacts img:hover {
+        opacity: 0.8;
+    }
+
+    .navigation-bar{
+        background: #f5e15e;
+        text-align: center;
+    }
+    .navigation-bar ul{
+        display: inline-flex;
+        list-style: none;
+        color: white;
+    }
+    .navigation-bar ul li{
+        width: 120px;
+        margin: 15px;
+        padding: 15px;
+    }
+    .navigation-bar ul li a{
+        text-decoration: none;
+        color: red;
+    }
+    .navigation-bar ul li:hover{
+        background: #2bab0d;
+        border-radius: 3px;
+    }
+</style>
+
 <body>
+<div class="navigation-bar">
+    <ul>
+        <li > <a href="home.html">HOME</a></li>
+        <li > <a href="A-layout.html">PYTHON PROGRAMMING - overview</a></li>
+        <li > <a href="B-layout.html">AAA TESTING</a></li>
+        <li > <a href="C-layout.html">OOPS</a></li>
+    </ul>
+</div>
+<!-- header start -->
+<div id="header" class="section">
+    <p> SEPARATION OF CONCERNS </p>
+</div>
+<!-- header end -->
+
+<!-- My Schedule section start -->
+<div class="section">
+    <h1><span> Separation of Concerns </span></h1>
+
+    <p>
+        "Separation of concerns" means that each file, each piece of code, has one simple and well defined purpose. In
+        this project you will be exploring the separation of UI framework, input handling, and application logic. You
+        will build a basic calculator object then use that same object to take arguments from the terminal and the
+        browser. <br>
+
+        <br>In computer science, separation of concerns(SoC) is a design principle for separating a computer program into
+        distinct sections. Each section addresses a separate concern, a set of information that affects the code of
+        a computer program. A concern can be as general as "the details of the hardware for an application", or as
+        specific as "the name of which class to instantiate". A program that embodies SoC well is called a modular
+        program. Modularity, and hence separation of concerns, is achieved by encapsulating information inside a
+        section of code that has a well-defined interface. <br>
+        Encapsulation is a means of information hiding. Layered designs in information systems are another embodiment
+        of separation of concerns (e.g, presentation layer, business logic layer, data access layer, persistence layer)
+
+    </p>
+
+</div>
+
+
+<div class="section">
+    <h1><span> Separation of Concerns Advantages  </span></h1>
+    <p>
+        Separation of Concerns in software architecture would have various advantages: <br>
+
+        1) Lack of duplication and singularity of purpose of the individual components render the overall system
+        easier to maintain.  <br>
+
+        2) The system becomes more stable as a byproduct of the increased maintainability.<br>
+
+        3) The strategies required to ensure that each component only concerns itself with a single set of cohesive
+        responsibilities often result in natural extensibility points.  <br>
+
+        4) The decoupling which results from requiring components to focus on a single purpose leads to components
+        which are more easily reused in other systems, or different contexts within the same system. <br>
+
+        5) The increase in maintainability and extensibility can have a major impact on the marketability and adoption
+        rate of the system.  <br>
+
+        There are several flavors of Separation of Concerns. Horizontal Separation,Vertical Separation, Data Separation
+        and Aspect Separation.
+
+
+    </p>
+</div>
+
+
+
+<div class="section">
+    <h1><span>Separation of Concerns in Calculator program</span></h1>
+    <p>
+        The Seperation of Concerns is a concept which is used in the Calculator program for the class calculator is
+        divided into seperate classes like addition, subtraction, multiplication and division. <br>
+
+        It is very important that you build your calc object with exactly the property names, arguments, and return
+        values specified. Doing this is called "developing to an interface". If you do this correctly you will be able
+        to replace anyone's calculator object with yours and your application will continue working. The magic of
+        software design. <br>
+
+        Understanding this principle will help with testing, development scheduling, collaboration, maintenance,
+        everything. In our experience, understanding separation of concerns is the most important thing a new programmer
+        can learn. Far more important than learning new libraries, powerful devtools, or even being good at solving
+        programming challenges. <br>
+
+        So if this project feels too easy and you find yourself wanting to make it more complicated, remember that the
+        code isn't the point of this project. The design is the point. Pay attention to how we use specs to define and
+        develop the calculator, and how we integrate that object into the HTML.
+
+
+    </p>
+</div>
 
 </body>
 </html>
