@@ -192,6 +192,21 @@
     <h1><span>Arrange</span></h1>
     <p>
         Arrange step sets up the tests input value. The block of code that sets the condition for the test action.
+        Arrange section is where you write to setup the test. This is where you setup all the pre-requisites before the
+        actual test is run. For example, if your test expects specific data to exist in the database, you will need to
+        setup the database with the exact data.
+        To be able to put yourself in a position where you can invoke a method and check that the result was correct,
+        you first need to able to put things into a primed configuration. If you want to test that your pistol can
+        shoot a tin can, then you would probably need to set up the tin can at an appropriate range, load the weapon and
+        take the safety off before you even think about firing. <br>
+        This step is often referred to as the Arrange phase, as you are arranging things prior to calling the
+        method/function of interest.
+        In the stack example, the arrange phase would simply mean creating an empty stack. In more complicated
+        scenarios, you will need to do more work to knock things into shape.
+        <br><br>
+        <h4> Arrange Method: var repository = Substitute.For < IClientRepository >(); </h4>
+        <h4>  var client = new Client(repository)  </h4> <br>
+
     </p>
 </div>
 
@@ -223,7 +238,20 @@
 <div class="section">
     <h1><span>Act</span></h1>
     <p>
-        Line of code where the action is taken on the SUT. This Act step prompts the primary function being tested
+        Line of code where the action is taken on the SUT. This Act step prompts the primary function being tested.
+        Act on the data through some method that performs an action. Act is the section where perform the actions for
+        the test. For example for a UI test this could be clicking on a button. For an Http REST API test, this could
+        be making the actual API request. <br>
+        The action is the main bit of the show. It is the bit the test is interested in, whether because calling a method
+        or function returns a result that can be directly scrutinised, or because calling it causes a side-effect that
+        can be observed (mutation of state, call to another class, an event being raised etc).
+        This is often called the Act phase.
+        In the empty stack example, the Act phase occurs when Push() is called, as this is the interesting call in
+        the test, the one that exercises the unit of code under test.
+        <br><br>
+    <h4>Act method: client.Save(); </h4>
+
+
     </p>
 </div>
 
@@ -257,7 +285,17 @@
     <h1><span>Assert </span></h1>
     <p>
         The block of code which performs the assertions on the state of SUT after action. Assert step verifies that the
-        output of the function is what we expected.
+        output of the function is what we expected.The assert section ensures that the code behaves as expected.
+        Assertions replace us humans in checking that the software does what it should. They express requirements that
+        the unit under test is expected to meet. <br>
+        The assertion is the part that ensures that your expectations are met. You can cobble objects together and call
+        any number of methods, but unless you actually check a meaningful result, there is little point in it. Without a
+        good assertion, the best you can do is prove that the unit of code under test has not crashed, there is very
+        little value in this.
+        This step is often called the Assert phase.
+        In the stack example, the Assert phase occurs when the Count property is checked against our expectation.
+        <br><br>
+        <h4>Assert Method: mock.Received.SomeMethod(); </h4>
 
     </p>
 </div>
@@ -281,7 +319,8 @@
 </div>
 
 <footer>
-    <br><br><a href="mailto:pp236@njit.edu">mail me</a>
+    <h4> Pritesh Ponnaboina  </h4>
+    <a href="mailto:pp236@njit.edu">mail me</a>
     <br>
 </footer>
 
